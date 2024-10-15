@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="asm"></p>
+    <p id="comp"></p>
+    <p id="txt"></p>
+    <p id="cel"></p>
+<script>
+    
+    const car = ["mazda","bmw","volvo" ];
+
+    car[0]= "toyota";
+
+    car.push("audi");
+
+    document.getElementById('demo').innerHTML= car;
+
+    let a=-5;
+    
+    a <<= 5/*assiment opretor "=,+=,-=,*=,/=,%=,**="  */
+
+    document.getElementById('asm').innerHTML= a;
+
+    let x=20;
+    let y=25;
+    let z=20;
+
+   /* let z= x!=y;comparison opretor "==,!=,<,<=,>,>=,!==,?"*/
+
+    document.getElementById('comp').innerHTML= (x==y) + "<br>" + (x==z);
+
+    let text = "Hello";
+    text += " world";
+
+    document.getElementById('txt').innerHTML=text;
+
+    function tocelsius(f){
+        return  (5/9) * (f-32);
+    }
+    let value=tocelsius(77);
+
+    document.getElementById('cel').innerHTML= value;
+</script>
+</body>
+</html>

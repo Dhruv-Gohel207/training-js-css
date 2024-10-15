@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+<html>
+<body >
+
+
+<p>select car</p>
+<select id="myselect" onchange="myfunction()" onfocus="myfunction()" onclick="myfunction()" onmouseover="myyfunction()">
+    <option value="audi" >audi</option>  
+    <option value="volvo">volvo</option>
+    <option value="suzuki">suzuki</option>
+    <option value="tata">tata</option>
+</select>
+<p>when we change value its trigged function and gives output</p>
+
+<p id="demo"></p>
+<script>
+    function myfunction(){
+        let x = document.getElementById("myselect").value;
+        document.getElementById("demo").innerHTML= "you selected:" + x;
+        document.getElementById("myselect").style.background ="brown";
+        
+        /*document.getElementById("demo").innerHTML= "you clicked car :"+x;*/
+    }
+    function myyfunction(){ 
+        document.getElementById("myselect").style.background ="navy";
+
+    }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+        <p id="dis"></p>
+        
+        <script>
+            const person = {
+                fname: "Dhruv",
+                Lname: "Gohel",
+                age : 20
+            };
+            let {age, Lname, fname, country= "Indian"} = person;
+
+            document.getElementById('dis').innerHTML = fname + " " + Lname + " " + age + " " + country;
+        </script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="evl"></p>
+    <button id="btn">Try It</button>
+
+    <script>
+        document.getElementById('btn').addEventListener("click",displaydate);
+
+        function displaydate(){
+            document.getElementById('evl').innerHTML=Date();
+            
+        }
+    </script>
+</body>
+</html>

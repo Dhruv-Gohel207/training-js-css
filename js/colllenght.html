@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript !</h1>
+     <p>here we performing Rootnodes</p>
+     <p>collection length with for loop test</p>
+
+    <button onclick="myfunction()">try it</button>
+
+    
+
+    <script>
+        function myfunction(){
+         const myCollection = document.getElementsByTagName("p");
+            for(let i=0; i < myCollection.length; i++ ){
+                myCollection[i].style.color= "red";
+
+
+            }
+
+        }
+    </script>
+</body>
+</html>

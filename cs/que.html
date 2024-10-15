@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        q:lang(no){
+            quotes: "'" "'";
+        }
+        p:first-child q{
+            color: blue;
+        }
+        q:lang(no):hover{
+            color: #8a2be2;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        input:focus{
+            background-color: lightgray;
+        }
+        
+/*ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  li a:hover{
+    background-color: aquamarine;
+    color: #080808;
+  }
+  
+li a {
+    display: block;
+    color: #000;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+       /* div::first-line{
+            color: #8a2be2;
+            font-variant:small-caps;
+            
+        }
+       /* div::first-letter{
+            color: blue;
+            font-size: 30px;
+        }
+      /*  div::before{
+            content: url(sqp.gif);
+        }   
+        div::after{
+            content: url(sqp.gif);
+
+        }*/
+        ::marker{
+            color: blue;
+        }
+        ::selection{
+            background-color:lightgray;
+            color: rgb(6, 6, 6);
+        }
+        img:hover{
+            opacity: 0.5;
+            
+        }
+        div.back{
+            background: url(terre.jpg) repeat;
+            border: 8px solid black;
+            border-image: url('wl.jpg') 30% stretch;
+            clear: both;
+            overflow: hidden;
+            position: static;
+            float:inline-end;
+        }
+        div.trans{
+            border: 2px solid black;
+            
+            margin: 30px;
+            padding: 5px;
+            background-color: aliceblue;
+            opacity: .5;
+            margin-left: 20px;
+            
+
+        }
+        div.trans p{
+            font-weight: bolder;
+            color: #000000;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p>Someone said : <q lang="no">HE WHO CONQUERS HIMSELF IS THE MIGHTIEST WARRIOR</q> and that's motivate us.</p>
+<p>In this example, :lang defines the quotation marks for q elements with lang="no":</p>
+<label for="name">ENTER NAME :</label>
+<input type="text" name="name" id="name">
+<div>     macOS and Linux. It comes with built-in support for JavaScript,
+    You can use the overflow property when you want to have better control of the layout. 
+</div>
+    <ul>
+        <li><a href="#">mousee</a></li>
+        <li><a href="#">keybord</a></li>
+        <li><a href="#">cpu</a></li>
+    </ul>
+    <div class="back">
+       <div class="trans"><p>You can use the overflow property when you want to have better control of the layout. </p>
+
+        
+       </div>
+    </div>
+</body>
+</html>

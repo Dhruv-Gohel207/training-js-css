@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        body{
+
+            margin: 30px;
+            padding: 30px;
+            background-color: antiquewhite;
+        }
+        #mydiv{
+                margin: 20px;
+                padding: 20px;
+                background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div id="mydiv">
+        <button id="btn">Click me</button>
+    </div>
+    
+    <script>
+        let d = document.getElementById('mydiv');
+        let b = document.getElementById ('btn');
+
+      //  b.addEventListener('click', btnclick, true);
+        d.addEventListener('click', divclick, true);
+        document.body.addEventListener('click', bodyclick, true);
+
+    /*    function btnclick(){
+            console.log("button clicked.....");
+        }*/
+
+        function divclick(){
+            console.log("Div  clicked...");
+        }
+
+        function bodyclick(){   
+            console.log("body clicked...");
+        }
+
+        b.addEventListener('click', function(e){
+            e.preventDefault();//use to change the natural behaviur of any element 
+        });
+    </script>
+</body>
+</html>

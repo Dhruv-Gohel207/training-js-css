@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 
+</head>
+
+<body>
+    <p id="demo"></p>
+    <p id="j"></p>
+    <p id="float"></p>
+    <p id="stradd"></p>
+
+    <script>
+        let text = `I love cats. Cats are very easy to love. Cats are very popular.`;
+        const count = text.matchAll("Cats");
+
+        document.getElementById("demo").innerHTML = text.startsWith("I") ;//Array.from(count)
+
+        let x1 =" dhruv";
+        let x2 = "gohel";
+
+        let x3 = `Welcome ${x1} ${x2}`;
+        document.getElementById("j").innerHTML = x3;
+
+        let i= 0.2 + 0.1;
+        document.getElementById('float').innerHTML = i;
+        
+        let p="20";
+        let q="50";
+        let r=p-q;/*the variable is as a string but it work in *,/,-,%, but it not working in addition+*/
+        document.getElementById('stradd').innerHTML=r;
+    </script>
+</body>
+
+</html>

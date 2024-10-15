@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Backgrond color swithcer</title>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 20px 100px;
+        }
+        h1{
+            text-align: center;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+        p{
+            font: 15px;
+            text-align: justify;
+        }
+        .btn{
+            height: 20px;
+            width: 20px;
+            margin: 2px;
+            float: right;
+
+          /*  display: inline-block;*/
+            border: 1px solid rgb(160, 145, 145);
+            border-radius: 50%;
+            cursor: pointer;
+            
+        }
+       
+        #white{
+            background-color: #ffffff;
+        }
+        #skyblue{
+            background-color: #87ceeb;
+        }
+        #violet{
+            background-color: #ee82ee;
+        }
+        #black{
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="skyblue" onclick="changeBG('#87ceeb')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ee82ee')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">About Us</h1>
+    <img src="https://www.susangreenecopywriter.com/wp-content/uploads/2013/01/iStock_000039291924_Medium.jpg" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nobis enim nam, rem reiciendis est obcaecati eius tempora exercitationem amet. Quis odit explicabo voluptatum aut cum, suscipit ea incidunt consequuntur. Similique, cumque. A, nam eaque magni, nulla officiis quod facere cum nostrum sunt ducimus dolorum et. Porro, commodi et? Ipsam commodi aliquam nostrum quidem tempore vitae maiores eligendi perspiciatis velit voluptates dolorem, ab ratione quasi repellendus delectus doloremque porro beatae, cupiditate dicta nisi sed! Aut debitis consequatur ratione voluptates ex non illo hic tenetur totam voluptatem, ad ipsum, fugit vitae corporis atque velit, consequuntur officia iusto? Perspiciatis illo, distinctio eius dolore architecto nisi error provident, ab quos enim voluptatibus culpa at minima quibusdam dolores velit reiciendis vel dolorum deleniti, repellendus voluptas! Ipsum cupiditate, officiis sequi nihil nobis recusandae fugiat labore, sunt in sint consequatur modi dolor, vel quidem dolores exercitationem eius? Animi pariatur repellendus voluptas numquam dolorem ducimus eveniet aliquam! Mollitia sapiente molestiae velit, reiciendis optio laudantium labore possimus architecto odio unde nobis ab ipsam iure, voluptatibus quam praesentium maiores, iste illo magnam! Recusandae accusamus quam sapiente, est laudantium natus odio iusto alias numquam nemo soluta illo deserunt reprehenderit, unde veniam a non nesciunt harum magnam voluptas dolor animi accusantium nihil. Distinctio quae odit recusandae ducimus sit assumenda eum sunt qui explicabo. Et possimus, repellendus sunt ullam veniam aliquam facere veritatis ipsam magnam vel illo, similique, ut assumenda. Optio, aliquid ut inventore necessitatibus velit quisquam dolore? Laboriosam, architecto doloremque a earum, doloribus magni officia totam, eligendi pariatur nostrum nesciunt qui.
+    </p>
+
+    <script>
+        function changeBG(color){
+            document.body.style.backgroundColor=color;
+            let txt = document.getElementsByClassName("text");
+
+            if(color == "#000000"){
+                for(let elm of txt){
+                    elm.style.color= "white";
+                }
+        }else{
+            for(let elm of txt){
+                elm.style.color= "black";
+            }
+        }
+        }
+       
+    </script>
+</body>
+</html>

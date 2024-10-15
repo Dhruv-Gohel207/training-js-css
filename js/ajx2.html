@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="loadDoc()">Request time</button>
+    <p id="dm"></p>
+    <script>
+        function loadDoc(){
+            const  xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                document.getElementById('dm').innerHTML = this.responseText;
+            }
+            xhttp.open("POST","jax.txt");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

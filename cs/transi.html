@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form using transition</title>
+    <style>
+        input[type=text]{
+            border: 2px solid lightgray;
+            width: 140px;
+            box-sizing: border-box;
+            padding: 14px 20px ;
+            font-size: 20px;
+            border-radius: 8px;
+            transition: 0.8s ease-in-out;
+        }
+        input[type=text]:focus{
+            width: 100%;
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="search" id="search" placeholder="search...">
+    </form>
+</body>
+</html>

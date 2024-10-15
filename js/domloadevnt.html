@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom content load event </title>
+</head>
+<body>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Kennicott_Bible_305r.l.jpg/280px-Kennicott_Bible_305r.l.jpg" alt="" width="500px">
+
+    <script>
+        window.addEventListener('DOMContentload',function(){
+                console.log("image prossesing");
+        });
+
+        window.addEventListener('load',function(){
+            console.log("image fully loaded");
+    });
+
+
+    window.addEventListener('keydown',checkKey);
+
+    function checkKey(){
+        console.log(event.key);
+    }
+    </script>
+</body>
+</html>

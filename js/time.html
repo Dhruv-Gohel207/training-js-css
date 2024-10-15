@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>A script on this page starts this clock:</p>
+
+    <p id="demo"></p>
+    <button onclick="clearInterval(myvar)">Stop It</button>
+
+    <script>
+     let myvar =    setInterval(myTimer, 1550);
+
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }
+    </script>
+</body>
+
+</html>

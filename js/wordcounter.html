@@ -1,0 +1,64 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 80px;
+        }
+        h1{
+            text-align: center;
+            margin: auto;
+            padding: 10px;
+            background-color: rgb(92, 187, 155);
+        }
+        p{
+            padding: 20px;
+            margin: 2px;
+            background-color: aquamarine;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        #text{
+            width: 99.5%;
+            font-size: 15px;
+            font-weight: bolder;
+            border-color: aqua;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>word and char counter</h1>
+
+    <textarea id="text" cols="30" rows="15"></textarea>
+
+    <p>
+        <span id="word">0</span> word and 
+        <span id="char">0</span> character.
+    </p>
+
+    <script>
+        let text = document.getElementById('text');
+
+
+        text.addEventListener('input', function(){
+                var text= this.value;
+             //   let char = text.length;
+                document.getElementById('char').innerHTML=text.length;
+
+                text = text.trim();
+                let words = text.split(" ");
+
+                let cleanlist = words.filter(function(elm){
+                        return elm != "";
+                });
+
+                document.getElementById("word").innerHTML=cleanlist.length;
+        });
+    </script>
+</body>
+</html>

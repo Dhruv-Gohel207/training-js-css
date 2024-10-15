@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="mp"></p>
+    <script>
+        const fruits = new Map([
+
+            ["apple", 300],
+            ["berrys", 200],
+            ["mango", 500]
+        ]);
+        let text = "";
+        fruits.delete("mango");
+        fruits.forEach(function (Value, Key) {
+            text += Key + " = " + Value + "<br>"
+        })
+        document.getElementById('mp').innerHTML = text;
+    </script>
+</body>
+
+</html>

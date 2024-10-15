@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>media in css</title>
+    <style>
+       *{
+        box-sizing: border-box;
+        }
+        .column{
+            float: left;
+            width: 25%;
+            padding: 15px;
+        }
+        .column::after{
+            content: both;
+            clear: both;
+            display: table;
+        }
+        body{
+            background-color: aqua;
+        }
+      /*  @media screen and (max-width: 500px) {
+            body{
+                background-color: blueviolet;
+                color: antiquewhite;
+            }*/
+        .flex-container{
+            display: flex;
+            flex-wrap: nowrap;
+            background-color: dodgerblue;
+            justify-content: center;
+            align-items: baseline;
+        }
+        .flex-container > div{
+            text-align: center;
+            width: 100%;
+            font-size: 20px;
+            margin: 10px;
+            line-height: 75px;
+            background-color: aliceblue;
+        }
+        @media screen and (max-width:990px) {
+            .column{
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .column{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <p>resize the window you can see effect og the media</p>
+
+    <!-- <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <h2>Column 1</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column" style="background-color:#bbb;">
+          <h2>Column 2</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column" style="background-color:#ccc;">
+          <h2>Column 3</h2>
+          <p>Some text..</p>
+        </div>
+        
+        <div class="column" style="background-color:#ddd;">
+          <h2>Column 4</h2>
+          <p>Some text..</p>
+        </div>
+      </div> -->
+      <div class="flex-container">
+        <div>1</div>
+        <div><h1>2</h1></div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>9</div>
+        <div><h6>10</h6></div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>15</div>
+      </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <title>Document</title>
+</head>
+<body>
+        <p id="nsum"></p>
+        <p id="d"></p>
+      <script>
+              const num = [1, 5 , 16, 28, 45, 57];
+            let sum = num.reduce(myfun, 0);
+
+            document.getElementById('nsum').innerHTML= "Total sum of this Array is :"+ sum;
+
+            function myfun(total, value){
+                return total + value;
+            }
+
+            const d = new Date();
+            document.write(d);
+            //document.getElementById('d').innerHTML= d;
+          /*  let book = ["math", "bio", "physics"];
+
+            let booklength = book.length;
+
+            for (i=0; i < booklength; i++){
+
+                console.log(`book ${i} is ${book[i]}`);
+            }
+
+           for(i=0; i<=10; i++)
+           {
+            document.write(`7 x ${i} = ${7*i} <br>`);
+           }*/
+        </script>
+</body>
+</html>

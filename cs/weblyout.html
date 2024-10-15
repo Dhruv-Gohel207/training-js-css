@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>perfect weblayput with css</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  />
+    <style>
+        *{
+            box-sizing: border-box;
+            
+        }
+        .header{
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+        }
+        body{   
+            background-color: #f1f1f1;
+            font-family: arial;
+            padding: 10px;
+            
+        }
+        .header h1{
+            font-size: 50px;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #333;
+            
+        }
+        .topnav a{
+            display: block;
+            padding: 14px 16px;
+            float: left;
+            text-align: center;
+            color: aliceblue;
+            text-decoration: none;
+            transition: .6s ease-in-out;
+            
+        }
+        .topnav a:hover{
+            background-color: lightgrey;
+            color: black;
+           
+            border-radius:20px / 30px ;
+            }
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .rightcolumn{
+            float: left;
+            width: 25%;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+        .fakeimg{
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(238, 229, 229, 0.76);
+        }
+        .fakeimg:hover img{
+            opacity: 0.5;
+            width: 60%;
+            transition: 5s ease-out;
+        }
+        .card{
+            background-color: white;
+            margin-top: 20px;
+            padding: 18px;
+        }
+        .card h2:hover{
+            color: #ce1010;
+        }
+        .row::after{
+            clear: both;
+            content: "";
+            display: table;
+        }
+        .footer{
+            text-align: center;
+            padding: 20px ;
+            background-color: lightgray;
+            font-size: 15px;
+            margin-top: 15px;
+        }
+        .a:hover{
+            color: black;
+            font-size: 20px;
+            
+        }
+        .a{
+            margin-left: 5px;
+
+        }
+        @media screen and (max-width: 800px) {
+            .leftcolumn, .rightcolumn {   
+              width: 100%;
+              padding: 0;
+            }
+          }
+          @media screen and (max-width: 400px) {
+            .topnav a , img {
+              float: none;
+              width: 100%;
+            }
+          }
+    </style>
+</head>
+<body>
+    <div class="header">
+         <h1>my website</h1>
+         <p>we make responsive web when you resize the broweser you can see effect</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#">Home</a>
+        <a href="#g">Gllary</a>
+        <a href="#c">Contact_us</a>
+        <a href="#" style="float: right;">About_us</a>
+    </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <H5>tittle discription ,some dates</H5>
+                <div class="fakeimg" style="height: 200px;"><img src="pin.jpg" alt="" width="200" height="150"></div>
+                <p>details about image</p>
+                <p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop
+                 and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript</p>
+            </div>
+
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <H5>tittle discription ,some dates</H5>
+                <div class="fakeimg" style="height: 200px;"><img src="pin.jpg" alt="" width="200" height="150"></div>
+                <p>details about image</p>
+                <p>Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop
+                 and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript</p>
+            </div>
+        </div>
+
+        <div class="rightcolumn">
+            <div class="card">
+                <h2>About_us</h2>
+                <div class="fakeimg" style="height: 100px;"><img src="sqp.gif" alt="" height="60" width="80"></div>
+                <p>Visual Studio Code is a lightweight but powerful</p>
+            </div>
+
+            <div class="card">
+                <h3 id="g">popular post</h3>
+                <div class="fakeimg"><img src="sqp.gif" alt=""  height="60" width="80"></div>
+                <div class="fakeimg"><img src="sqp.gif" alt=""  height="60" width="80"></div>
+                <div class="fakeimg"><img src="sqp.gif" alt=""  height="60" width="80"></div>
+            </div> 
+
+            <div class="card">
+                <h3 id="c">FOLLOW ME</h3>
+                <a href="#" class="a" ><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="a"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="a"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="a"><i class="fa-brands fa-discord"></i></a>
+
+
+                <P>CLICK THE LINK AND FOLLW</P>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction()">click</button>
+    <p id="demo"> ABCDE FGH IJKLMN OPQRSTU VWXYZ</p>
+    <script>
+        let text = "           ABCDE FGH IJKLMN OPQRSTU VWXYZ          ";
+        let text2 = text4.trimStart();
+     /*   document.getElementById("demo").innerHTML ="text1 lenght is : " + text4.length  + "<br>" +  text2.length;/*,chatAt,charCodeAt(4)*/
+       function myfunction(){
+     document.getElementById("demo").innerHTML=text.replace("ABCDE","VWXYZ");/*replaceAll*/
+       }
+    </script>
+</body>
+</html>

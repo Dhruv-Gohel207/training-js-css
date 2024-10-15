@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>image hover in css help with dropdown</title>
+    <style>
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: aquamarine;
+            width: 160px;
+            box-shadow: 8px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown:hover .dropdown-content{
+            display: block;
+        }
+        desc{
+            padding: 15px;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>dropdown image</h1>
+    <p>mouse over TO image and see</p>
+
+    <div class="dropdown">
+        <img src="terre.jpg" alt="terre" width="100" height="50">
+    
+    <div class="dropdown-content">
+        <img src="terre.jpg" alt="terre" width="300" height="200">
+        <div class="desc"> beutiful terre</div>
+    </div>
+</div >
+</body>
+</html>

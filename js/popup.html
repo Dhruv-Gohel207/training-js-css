@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Popup boxes</title>
+</head>
+<body>
+    <h2>Enter Your Name In Prompt</h2>
+    <button onclick="myfunction()">Try it</button>
+    <p id="prp"></p>
+    <script>
+        function myfunction(){
+            let text;
+            let person = prompt("Please Enter Your Name", "i.k: Harry poter")
+            if( person == null || person == ""){
+                    text = "User Cancled The Promot."
+            }
+            else{
+                text = "Hello "+ person + " How are you ?"
+            }
+            document.getElementById("prp").innerHTML = text;
+
+        }
+    </script>
+</body>
+</html>

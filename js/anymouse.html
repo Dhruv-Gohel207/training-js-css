@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <style>
+        #btn:hover{
+            background-color: aquamarine;
+            color: blue;
+            box-shadow: 0 0 8px 3px black ;
+            transition:  5s;
+            border: none;
+            border-left: 3px outset navy;
+            border-radius: 3px 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Click me </button>
+
+    <script>
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click', function(){
+            console.log("button was clicked");
+        });
+
+        btn.addEventListener('mouseover', function(){
+            console.log("mouseover the button");
+        });
+
+        btn.addEventListener('mouseout', function(){
+            console.log("mouse out of the button");
+        });
+    </script>
+</body>
+</html>

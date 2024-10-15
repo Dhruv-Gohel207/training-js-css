@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <!-- <h2 id="copy"> Hello Everyone</h2> -->
+    <!-- <p id="paste"></p> -->
+     <h1>Javascript !</h1>
+     <p>here we performing Rootnodes</p>
+     <p>collection test</p>
+
+    <p id="rtn"></p>
+    <script>
+       // document.getElementById('paste').innerHTML = document.getElementById('copy').childNodes[0].nodeValue;//innerHTML,firstchild.nodeValue they do same work
+      // document.getElementById('rtn').innerHTML = document.documentElement.innerHTML;  //here we can use to replace body/documentelement 
+
+      const myCollection = document.querySelectorAll("p");//getElementsByTagName
+
+      //document.getElementById('rtn').innerHTML = /*"this Documnet contain " + myCollection.length + " peragraph"*/"collection try is :"+ myCollection[0].innerHTML;
+      document.getElementById('rtn').innerHTML = window.location.port;//href,hostname,pathname,protocol----assign using for load other document
+    </script>
+</body>
+</html>

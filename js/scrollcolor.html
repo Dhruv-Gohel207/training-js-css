@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello</h1>
+
+    <form action="">
+        <input type="text" name="" id="myinpt">
+    </form>
+    <script>
+        window.addEventListener('scroll', function(){
+            if(window.pageYOffset > 150){
+            document.body.style.backgroundColor="blue";
+
+            }else{
+                document.body.style.backgroundColor="navy";
+            }
+
+    });
+
+    let x = document.getElementById('myinpt');
+    x.addEventListener('focus', myfocusfun);
+    x.addEventListener('blur', myblurfun);
+    x.addEventListener('change', function(){
+        console.log(this.value);
+    });
+    function myfocusfun(){
+        x.style.background = "skyblue";
+    }
+
+    function myblurfun(){
+        x.style.background = "white";
+    }
+
+
+    </script>
+</body>
+</html>

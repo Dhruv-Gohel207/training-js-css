@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        ol{
+            background-color: navajowhite;
+            list-style: inside;
+            margin-left: 10px;
+        }
+        ul{
+                list-style: square inside url("sqp.gif");
+        }
+        ul.c{
+            background-color: rgb(236, 180, 96);
+            color: rgb(125, 76, 6);
+        }
+        ul.t{
+            background-color: rgb(118, 73, 5);
+            color: navajowhite;
+        }
+        li#hc{
+            background-color: antiquewhite;
+            border:1px solid ;
+            
+            border-color: rgb(236, 180, 96) ;
+        }
+        li#bt{
+            background-color: rgb(236, 180, 96) ;
+            color: rgb(136, 87, 13);
+            border: 1px solid rgb(118,73,5);
+        }
+    </style>
+
+
+    <title>hmtl and css list tag</title>
+</head>
+<body>
+    
+    <p><big>hello</big></p>
+    <h3>html list</h3>
+    <ol style="font-family: 'Franklin Gothic Medium';"> 
+        <li class="c"style="color:rgb(79, 32, 18);">Coffe</li>
+        <ul class="c">
+            <li id="hc">Hot Coffe</li>
+            <ul title="price">
+                <li>$20</li>
+            </ul>
+            <li id="hc">Cold Coffe</li>
+            <ul title="price">
+                <li>$30</li>
+            </ul>
+        </ul>
+        <li class="t" style="color:rgb(146, 97, 48)">Tea</li>
+        <ul class="t">
+            <li id="bt">Black Tea</li>
+            <ul title="price">
+                <li>$20</li>
+            </ul>
+            <li id="bt">Green Tea</li>
+            <ul title="price">
+                <li>$25</li>
+            </ul>
+        </ul>
+        <li>Milk</li>
+        <ul title="price">
+            <li>$10</li>
+        </ul>
+    </ol>
+    
+</body>
+</html>

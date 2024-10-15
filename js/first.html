@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function myfunction(){
+            document.getElementById("demo").innerHTML="hello javascript"
+        }
+    </script>
+</head>
+<body>
+    <h2>javascript in html</h2>
+    <p id="demo">javascript can cahnge html content</p>
+
+    <button type="button" onclick="myfunction()">click me</button><br>
+    
+
+    <button onclick="document.getElementById('myimg').src='pin.jpg'">change img</button>
+
+    <img src="sqp.gif" id="myimg" style="width: 200px; height: 200px">
+
+    <button onclick="document.getElementById('myimg').src='sqp.gif'">change img</button><br>
+    <script>
+        let x,y,z;
+        x=5;
+        y=10;
+        z=x*y;
+        document.getElementById('demo').innerHTML = 'x and y addition shown inz z' + z ;
+    </script>
+</body>
+</html>

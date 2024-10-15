@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="con"></p>
+    <script>
+        const g = ["sonia", "dinitri"];
+        const b = ["john", "rock", "lee"];
+        g[0]= "sofia";
+        const c = g.concat(b,"neel");
+
+        document.getElementById('con').innerHTML=c;
+        document.getElementById('con').innerHTML=c.copyWithin(2, 0);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="s"></p>
+
+    <script>
+        const letters = new Set(["a", "b", "c"]);
+
+        let text = "";
+
+        for (const x of letters) {
+            text += x + "<br>";
+        }
+        document.getElementById('s').innerHTML = text;
+    </script>
+</body>
+
+</html>

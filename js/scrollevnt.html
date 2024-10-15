@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EVent Listner scroll event </title>
+</head>
+<body>
+    <h1>Dhruv gohel </h1> 
+
+    <script>
+        window.addEventListener('wheel', function(event){
+                if (event.deltaY < 0){
+                    console.log("Scrolling up....");
+                }else if(event.deltaY > 0){
+                    console.log("Scrolling Down...");
+                } 
+        } );
+
+
+    </script>
+</body>
+</html>

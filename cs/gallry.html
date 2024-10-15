@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+            div.gallary{
+                border: 1px solid #ccc;
+            }
+            div.gallary:hover{
+                border: 1px solid #777;
+            }
+            div.gallary img{
+                width: 100%;
+                height: auto;
+            }
+            .desc{
+                padding: 15px;
+                text-align: center;
+            }
+            a[target="_blank"]{
+                background-color: aqua;
+            }
+            * {
+                box-sizing: border-box;
+              }
+              
+              .responsive {
+                padding: 0 6px;
+                float: left;
+                width: 24.99999%;
+              }
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                  width: 49.99999%;
+                  margin: 6px 0;
+                }
+              }
+              
+              @media only screen and (max-width: 500px) {
+                .responsive {
+                  width: 100%;
+                }
+              }
+              [class|="desc"]{
+                border: 2px ridge navy;
+              }
+    </style>
+</head>
+<body>
+    <div class="responsive">
+        <div class="gallary">
+            <a target="_blank" href="hjh.jpg">
+            <img src="hjh.jpg" alt="discription" width="600" height="400">
+        </a>
+        <div class="desc">description of the image</div>
+    </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a target="_blank" href="dp.jpg">
+            <img src="dp.jpg" alt="discription" width="600" height="400">
+        </a>
+        <div class="desc">description of the image</div>
+
+    </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary">
+            <a target="_blank" href="terre.jpg">
+            <img src="terre.jpg" alt="discripton" width="600" height="400">
+        </a>
+        <div class="desc">description of the image</div>
+
+    </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallary"><a target="_blank" href="wl.jpg">
+            <img src="wl.jpg" alt="discription" width="600" height="400">
+        </a>
+        <div class="desc">description of the image</div>
+
+    </div>
+    </div>
+</body>
+</html>

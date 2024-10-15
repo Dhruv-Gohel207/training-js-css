@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body> 
+    <button id="btn">TRY IT</button>
+    <p id="mm"></p>
+   
+    <script>
+        let x = document.getElementById('btn');
+        x.addEventListener("mouseover", myfunction1);
+        x.addEventListener("click", myfunction2);
+        x.addEventListener("mouseout", myfunction3);
+
+      function myfunction1(){
+        document.getElementById('mm').innerHTML += "MOUSE OVER !"+ "<br> ";
+      }  
+      function myfunction2(){
+        document.getElementById('mm').innerHTML += "CLICKED !"+ "<br> ";
+      }  
+      function myfunction3(){
+        document.getElementById('mm').innerHTML += "MOUSE OUT !"+ "<br> ";
+      }  
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+            background-color: skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: whitesmoke;
+            padding: 50px;
+            width: 80%;
+            height: auto;
+            text-align: center;
+
+        }
+        input{
+            margin: 10px;
+            font-size: 15px;
+            padding: 10px;
+            font-weight: bold;
+            border: none;
+            color:rgb(86, 86, 245) ;
+            border-bottom: 4px solid rgb(86, 86, 245);
+            
+        }
+        input:focus{
+           border-color: aquamarine;
+           border-width: 5px;
+        }
+        input[type="submit"]{
+            padding: 10px;
+           border-radius: 0px 8px 0px 8px;
+           border-color: rgb(53, 114, 114);
+           border-width: 3px;
+           font-size: 18px;
+           background: radial-gradient(circle, rgb(129, 197, 182) 0%, rgb(123, 107, 192) 35%, rgb(170, 49, 150) 100%);
+
+        }   
+        input[type="submit"]:hover{
+            border-radius: 8px 0px 8px 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+            background: radial-gradient(circle, rgb(25, 202, 164) 0%, rgb(49, 125, 155) 35%, rgb(99, 174, 224) 100%);
+            color: rgb(255, 254, 253);
+            transition: 1.2s, backgrond 2s;
+        }
+        
+        h2{
+            text-align: center;
+        }
+        p.error{
+            color: red;
+            font-size: 12px;
+            
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>Login</h2>
+
+        <form action="" onsubmit="return validateform()">
+            <input type="text" placeholder="Enter User Name" id="username"><br>
+            <p class="error" id="usererror"></p><br>
+            <input type="password" placeholder="Enter Password" id="password"><br>
+            <p class="error" id="passerror"></p><br>
+
+            <input type="submit" value="submit">
+        </form>
+    </div>
+
+    <script>
+        let username = document.getElementById('username');
+        let password = document.getElementById('password');
+        let flag = 1;
+
+        function validateform(){
+            if(username.value == ""){
+                document.getElementById('usererror').innerHTML= "User Name Is Empty !";
+                flag = 0;
+            }else if (username.value.length < 3){
+                document.getElementById('usererror').innerHTML= "User Name Requir minimum 3 Charcater !";
+                flag = 0;
+
+            }else{
+                document.getElementById('usererror').innerHTML= "";
+                flag = 1;
+            }
+           
+
+            if(password.value == ""){
+                document.getElementById('passerror').innerHTML= "Password Is Empty !";
+                flag = 0;
+
+            }else{
+                document.getElementById('passerror').innerHTML= "";
+                flag = 1;
+                
+
+            }
+             if(flag){
+                return true;
+             }else{
+                return false
+             }
+        }
+    </script>
+</body>
+</html>

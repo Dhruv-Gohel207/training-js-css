@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .mask1{
+           /* -webkit-mask-image: linear-gradient(black, transparent);
+            mask-image: linear-gradient(black, transparent); */
+            -webkit-mask-image: radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5 ) 50%);
+            mask-image:radial-gradient(circle, black 50%, rgba(0, 0, 0, 0.5 ) 50%);
+           
+          
+        }
+        .pagination{
+            display: inline;
+        }
+        .pagination a{
+            border: 1px solid gray;
+            float: left;
+            font-size: 20px;
+            padding: 8px;
+            margin: 0 4px;
+            text-align: center;
+            text-decoration: none;
+        }
+        .pagination a:active{
+            background-color: aqua;
+            color: aliceblue;
+            border: none   ;
+        }
+        .pagination a:hover{
+            background-color: lightgray;
+        }
+        .newspaper{
+            column-count: 4;
+            column-gap: 50px;
+            column-rule-style:solid;
+            column-rule-width: 2px;
+            column-rule-color: blueviolet;
+            resize: both;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The mask-image Property</h1>
+
+        <div class="mask1">
+            <img src="wl.jpg" alt="wl" height="50%" width="50%">
+        </div>
+
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+            
+        </div>
+        <br><br><br>
+        <div class="newspaper">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+             aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut 
+             aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+              vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum 
+              zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil 
+              imperdiet doming id quod mazim placerat facer possim assum.
+            </div>
+</body>
+</html>

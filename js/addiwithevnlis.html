@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Try it</button>
+    <p id="add"></p>
+    <script>
+        let p1= 4;
+        let p2= 7;
+
+        document.getElementById('btn').addEventListener("click",function(){
+            myfunction(p1, p2);
+        });
+
+        function myfunction(a, b){
+            document.getElementById("add").innerHTML= a*b;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css template</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire|outline|emboss|neon|shadow-multiple">
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+body{
+    font-family: "sofia", serif;
+    text-shadow: 3px 3px 5px #080808;
+
+}
+header{
+    background-color: rgb(105, 101, 35);
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color:black;
+}
+nav{
+    
+    float: left;
+    width: 30%;
+    background-color: bisque;
+    padding: 20px;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0; 
+}
+article
+{
+    float: left;
+  
+    width: 70%;
+    background-color: aliceblue;
+    padding: 20px;
+    height: 300px;
+}
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    margin: 0%;
+    padding: 0%;
+  }
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }  
+  }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 class="font-effect-fire">cities</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">London</a></li>
+                <li><a href="#">rome</a></li>
+                <li><a href="#">paris</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h1 class="font-effect-outline">London</h1>
+            <p>London is the capital city of England. It is the most populous city in the  United Kingdom,
+                 with a metropolitan area of over 13 million inhabitants.</p>
+           <p>Standing on the River Thames, London has been a major settlement for two millennia, 
+            its history going back to its founding by the Romans, who named it Londinium.</p>
+        </article>
+    </section>
+    <footer>
+        <p class="font-effect-emboss">footer</p>
+    </footer>
+    
+</body>
+</html>

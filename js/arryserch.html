@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        * {
+            color: white;
+            background-color: black;
+        }
+
+        button {
+            border: 1px ridge rgb(194, 193, 193);
+            background-color: transparent;
+            margin: 0px 5px;
+            transition: border 1s;
+            padding: 3px;
+        }
+
+        button:hover {
+            box-shadow: 1px 1px 10px 2px rgb(22, 106, 218);
+            transition: box-shadow .7s, border 1s;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="car"></p>
+    <p id="nm"></p>
+    <p id="numb"></p>
+    <p id="min"></p>
+
+    <button onclick="myfunction1()">change alphabetically</button>
+    <button onclick="myfunction2()">change numerically</button>
+    <button onclick="myfunction3()">change randome</button>
+
+
+
+
+    <script>
+        const cars = ["Volvo", "mazda", "RR", "Ferrari", "Toyota", "Volvo"];
+
+        document.getElementById("car").innerHTML = cars.lastIndexOf("Volvo") + 1;
+        document.getElementById('car').innerHTML = cars.toReversed();/*revers-for revers order,toSorted,toReversed*/
+
+        const num = [6, 15, 17, 24, 29];
+        let first = num.findLastIndex(x => x > 18); "<br>"
+
+        // document.getElementById('nm').innerHTML="First  number over 18 is : "+ first;"<br>"
+        document.getElementById('nm').innerHTML = num.sort(); "<br>"
+        /* function myfunction(value, index, array){
+             return value > 18;
+         }*/
+
+        const number = [1, 50, 38, 20, 12, 5];
+        document.getElementById('numb').innerHTML =myarraymax( number);
+
+        function myfunction1() {
+            document.getElementById('numb').innerHTML = number.sort();
+        }
+        function myfunction2() {
+            number.sort(function (a, b) { return b - a });
+            document.getElementById("numb").innerHTML = number;
+        }
+        function myfunction3() {
+            number.sort(function () { return 0.5 - Math.random()});
+            document.getElementById("numb").innerHTML = number;
+        }
+        function myarraymax(arr){
+          return Math.max.apply(null, arr) ;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>css in html</title>
+    <style>
+        h1 {
+            color: blueviolet;
+          /*  border: 5px solid black;*/
+            border-radius: 10px;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            color: blue;
+            margin: 10PX 10px;
+            font-style: oblique;
+            
+            /*border-bottom: 5px solid navy ;*/
+            border-left: 5px solid rgb(62, 62, 192);
+            border-radius: 10px 0 0 10px;
+        }
+        a:link{
+            text-decoration: none;
+            color: cornflowerblue;
+            background-color: transparent;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+            background-color: transparent;
+        }
+        a:active{
+            color:green;
+            text-decoration: underline;
+            background-color: transparent;
+        }
+        a:visited  {
+            color:brown;
+            text-decoration: none;
+            background-color: transparent;
+        }
+        button{
+            padding:5px;
+            background-color: aquamarine;
+            text-align: center;
+            margin-top: 5px;
+        }
+        button:hover{
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            padding: 10px;
+            
+        }
+       /* body{
+            background-image: url(dp.jpg);
+             background-size: 100%;
+             background-repeat: no-repeat;
+            /*background-attachment: 100%;
+        }*/
+        picture{
+            background: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph.</p>
+    <p><a href="#A5">Jump to link 5</a></p>
+    <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_self">Visit W3Schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_parent">Visit W3Schools!</a><br>
+    <a href="https://www.w3schools.com/" target="_top">Visit W3Schools!</a><br>
+    <a id="A5" href="https://www.google.com" target="_blank">google link</a><br>
+    <button onclick="document.location='default.asp'">HTML Tutorial</button><br>
+  <!--  <img src="dp.jpg" alt="Moon" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+        <area shape="circle" coords="250,300,250" alt="Pic of Moon" href="moon.htm">
+    </map>-->
+    <picture>
+        <source media="(min-width: 950px)" srcset="dp.jpg">
+        <source media="(min-width: 565px)" srcset="hjh.jpg">
+        <img src="C:\Users\ok\OneDrive\Pictures\wl.jpg">
+    </picture>
+        
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="dat"></p>
+
+
+    <script>
+        function person (first, last, age){
+            this.firstname=first;
+            this.lastname=last;
+            this.age=age;
+           /* mycar: {
+                    car1:"BMW",
+                    car2:"porshe",
+
+            },*/
+            this.fullname= function(){
+                return this.firstname + " " + this.lastname;
+            }
+        };
+        const myfather = new person("john", "deo", 54)
+       // delete person.firstname;
+       // person.eyecolor="brown";
+      //  document.getElementById('demo').innerHTML=person.fullname() + " eyecolor is " + person.eyecolor + "." + " and car is " + person.mycar.car2;
+        document.getElementById('demo').innerHTML=myfather.fullname();
+      /*  const myarray = JSON.stringify(person);
+        document.getElementById('demo').innerHTML = myarray;  */
+    </script>
+    <button onclick="document.getElementById('dat').innerHTML=Date()">check time/date</button>
+</body>
+</html>

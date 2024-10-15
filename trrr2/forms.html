@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form in html</title>
+    <STYle>
+        fieldset
+        {
+            
+            background-image: url(dp.jpg);
+            background-size: cover;
+            width: 60px;
+            
+            margin-left: 40%;
+            /*text-align: center;*/
+            padding: 10px;
+
+        }
+        input[type=text]:focus{
+            width: 200px;
+            transition: width 8s ease-in-out;
+        }
+        form{
+            color: aliceblue;
+        }   
+        textarea, input {
+            background-color: transparent;
+            color: aliceblue;
+            border-color: aliceblue;
+        }
+        #bt:hover{
+        
+            border-radius: 5px;
+            
+            text-shadow: 2px rgb(36, 1, 36);
+            border-bottom-color: blueviolet;
+            color: rgba(245, 243, 247, 0.907);
+            background-blend-mode:hue;
+            background: rgb(2,0,36);
+background: radial-gradient(circle, rgb(109, 55, 112) 0%, rgb(209, 70, 206) 35%, rgb(142, 38, 190) 100%);
+
+
+        }
+        
+     /*  label{
+            text-align: center;
+        }*/
+    </STYle>
+</head>
+<body>
+    <!-- form element
+     <input>
+<label>
+<select>
+<textarea>
+<button>
+<fieldset>
+<legend>
+<datalist>
+<output>
+<option>
+<optgroup> -->
+    <form action="" target="_blank">
+        <fieldset>
+            <legend style="font-style:bolder; " >form</legend>
+        <label for="fname">first Name :</label><br>
+        <input type="text" id="fname" name="fname" value="Dhruv" disabled><br>
+
+        <label for="lname">Last Name :</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+
+        <label for="Phone Number">Enter Number :</label>
+        <input type="number" name="pnum" id="pnum" maxlength="10" required><br>
+
+        <label for="DOB" id="DOB">Date Of Birth</label>
+        <input type="datetime-local" name="DOB" id="DOB" required>
+
+        <!-- <label for="age" id="age">AGE(Between 18 to 38)</label>
+        <input type="range" name="age" id="age" min="18" max="38">
+        <output for="range" name="age"></output> -->
+
+        <p>Choose your fav web language</p><br>
+        <input type="radio" id="php" name="fav lan" value="PHP">
+        <label for="php">PHP </label><br>
+
+        <input type="radio" id="html" name="fav lan" value="html">
+        <label for="html"> HTML </label><br> 
+
+        <input type="radio" id="css" name="fav lan" value="css">
+        <label for="html"> CSS</label><br>  
+
+        <p>try checkbox</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="bike">
+        <label for="vehicle1"> bike</label><br>
+
+        <input type="checkbox" name="vehicle2" id="vehicle2" name="vehicle2" value="car">
+        <label for="vehicle2">car</label><br>     
+
+        <label for="cars" >Choose car :</label>
+        <select id="cars" name="cars" size="2" multiple>
+            <option value="volvo">volvo</option>
+            <option value="BMW">BMW</option>
+            <option value="toyota">toyota</option>
+        </select><br>
+
+        <textarea name="address" rows="10" cols="30">amby vally</textarea><br>
+        
+        <label for="email">username</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="password">password</label>
+        <input type="password" name="psw" id="psw" required> 
+
+        <label for="myfile">Select your document</label>
+        <input type="file" name="myfile" id="myfile" multiple>
+        
+
+        <!-- <label for="fav_color">Choose fav_color</label>
+        <input type="color" name="fav_color" id="color"><br> -->
+
+        <input id="bt" type="button" name="submit" value="submit" onclick="alert('Data Submited')">
+        <input type="reset" value="reser">
+    </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>table with css </title>
+    <style>
+        table{
+            border-bottom: 2px ridge rgb(59, 3, 3);
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+          
+            height: 35px;
+            padding: 5px;
+            
+        }   
+        tr:hover{
+            background-color: antiquewhite;
+            border:none;
+        }
+            td:hover,th:hover{
+            background-color: navajowhite;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+        fieldset{
+           /* height:200px;
+            width: 200px;*/
+            border-radius: 10px;
+        }
+        th{
+           width: 100px;
+            padding: 15px;
+            background-color: rgb(169, 131, 75);
+            border-bottom: 2px ridge rgb(92, 3, 3);
+            display:inline-flexbox;
+            visibility: visible;
+        }
+        td{
+           max-width: 70px;
+            padding: 5px;
+            border-bottom: 2px  ridge brown;
+            vertical-align: bottom  ;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+    </style>
+</head>
+<body>
+
+    <form action="">
+        <fieldset style="overflow-x: auto;">
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>FAV_Lan</th>
+                    <th>experince</th>
+                </tr>
+                <tr>
+                    <td>john</td>
+                    <td>css</td>
+                    <td>fresher</td>
+                </tr>
+                <tr>
+                    <td>jack</td>
+                    <td>PHP</td>
+                    <td>1 year</td> 
+                </tr>
+                <tr>
+                    <td>ban</td>
+                    <td>react</td>
+                    <td>5 year</td>
+                </tr>
+                <tr>
+                    <td>swhon</td>
+                    <td>python</td>
+                    <td>6 year</td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array in javascript</title>
+    <style>
+        ul{
+            list-style-type: square;
+            background-color: rgb(202, 222, 240);
+        }
+        ul li{
+            background-color: rgb(146, 156, 165);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="arr"></p>
+    <script>
+        const cars = ["Volvo", "Toyota","BMW"];
+            
+        cars.pop();
+        cars.push("jaguar");
+        
+       
+        let clen =cars.length;
+
+        let text = "<ul>";
+            for(let i=0; i<clen; i++){
+                text +="<li>"+cars[i] + "</li>";
+
+            }
+            text +="</ul>";
+            
+            document.getElementById('arr').innerHTML = text;
+           // document.getElementById('arr').innerHTML = cars.shift();
+    </script>
+</body>
+
+</html>

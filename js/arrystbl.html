@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+       /* const myArr =[
+        {name:"x00", price:100},   
+        {name:"x01", price:100},
+        {name:"x02", price:110},
+        {name:"x03", price:110},
+        {name:"x04", price:120},     
+        {name:"x05", price:130},
+        {name:"x06", price:130},
+        {name:"x07", price:140},
+        {name:"x08", price:140},
+        {name:"x09", price:150},
+        ];
+
+        let txt = "";
+        myArr.forEach(myfunction);
+
+        function myfunction(value){
+            txt+= value.name + " " + value.price + "<br>";
+        
+        }
+        document.getElementById('demo').innerHTML=txt;*/
+
+        const number = [4, 8, 6, 12, 65, 45, 32];
+        let txt = "";
+        number.forEach(myfunction1);
+
+        function myfunction1(index, value, array){
+            txt += value + "<br>";
+        }
+        document.getElementById('demo').innerHTML=txt;
+    </script>
+</body>
+</html>

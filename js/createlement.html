@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <h2 id="h1">Javascript</h2>
+        <p id="p1">hello Everyone</p>
+    </div>
+    <script>
+        const para = document.createElement("h2");
+        const node = document.createTextNode("this is new ele");
+
+        para.appendChild(node);
+
+        const element = document.getElementById('div1');
+        const child = document.getElementById("p1");
+        const child1 = document.getElementById("h1");
+
+        element.appendChild(para);
+       // element.removeChild(child);
+       // element.replaceChild(para, child1)
+    </script>
+</body>
+</html>

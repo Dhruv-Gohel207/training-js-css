@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = new Date(2020, 2, 1, 2, 45, 20); // Note: Months are 0-based (March is 2)
+        let y = new Date();
+    
+        // Calculate the difference in milliseconds
+        let timeDifference = y.getTime() - x.getTime();
+    
+        // Convert milliseconds to seconds
+        let millisecondsInSecond = 1000;
+        let millisecondsInMinute = millisecondsInSecond * 60;
+        let millisecondsInHour = millisecondsInMinute * 60;
+        let millisecondsInDay = millisecondsInHour * 24;
+    
+        // Get total days
+        let totalDays = Math.floor(timeDifference / millisecondsInDay);
+    
+        // Calculate years
+        let yearsDifference = y.getFullYear() - x.getFullYear();
+        let hasCompletedAnniversary = (y.getMonth() > x.getMonth()) || 
+            (y.getMonth() === x.getMonth() && y.getDate() >= x.getDate());
+        
+        if (!hasCompletedAnniversary) {
+            yearsDifference--;
+        }
+    
+        // Calculate months
+        let monthsDifference = (y.getFullYear() - x.getFullYear()) * 12 + (y.getMonth() - x.getMonth());
+        if (y.getDate() < x.getDate()) {
+            monthsDifference--;
+        }
+
+        
+    
+        // Remaining days after calculating months
+        let startDate = new Date(x);
+        startDate.setFullYear(y.getFullYear(), y.getMonth(), x.getDate());
+        let remainingDays = Math.floor((y - startDate) / millisecondsInDay);
+    
+        // Calculate remaining hours, minutes, and seconds
+        let remainingTimeDifference = y.getTime() - startDate.getTime();
+        let hours = Math.floor(remainingTimeDifference / millisecondsInHour);
+        let minutes = Math.floor((remainingTimeDifference % millisecondsInHour) / millisecondsInMinute);
+        let seconds = Math.floor((remainingTimeDifference % millisecondsInMinute) / millisecondsInSecond);
+    
+        console.log(`Date x: ${x}`);
+        console.log(`Date y: ${y}`);
+        console.log(`Time difference: ${yearsDifference} years, ${monthsDifference} months, ${remainingDays} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds.`);
+    </script>
+    
+    
+</body>
+</html>

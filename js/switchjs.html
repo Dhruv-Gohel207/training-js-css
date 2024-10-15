@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p id="swc"></p>
+    <script>
+        let text;
+        switch(new Date().getDay()){
+            case 1:
+            case 2:
+                text="Working Days";
+                break;
+            case 4:
+            case 5:
+                text=" Soon it is Weekend";
+                break;
+            case 6:
+            case 0:
+                text="Weekend Day";
+                break;
+        }
+        document.getElementById('swc').innerHTML=text;
+
+    </script>
+</body>
+</html>
